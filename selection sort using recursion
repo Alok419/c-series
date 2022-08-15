@@ -1,0 +1,17 @@
+void selections(vector<int>& arr, int i,int n){
+    if(i>n-1)
+        return ;
+    int min = i;
+        for(int j = i+1;j<n;j++){
+            if(arr[j]<arr[min]){
+                min = j;
+            }
+        }
+        swap(arr[i],arr[min]);
+    
+    selections(arr,i+1,n);
+}
+void selectionSort(vector<int>& arr, int n)
+{   
+   selections(arr,0,n);
+}
