@@ -1,0 +1,25 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+   int a ;
+  cout << "enter ther number";
+  cin >> a;
+  int b ;
+  
+  cout << "enter ther number";
+  cin >> b;
+  int c = a+b;
+  int d = a-b;
+  int e = a*b;
+  int f = a/b;
+
+  cout <<"a+b " << c <<endl;
+  cout <<"a-b "<< d<<endl;
+  cout <<"a*b "<< e<<endl;
+  cout <<"a/b "<<f<<endl;
+    return 0;
+
+}
